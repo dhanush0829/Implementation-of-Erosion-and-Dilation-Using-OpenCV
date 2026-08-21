@@ -38,3 +38,33 @@ Add pixels to the boundaries of foreground objects.
 Display the dilated image.
 Step 8:
 Compare the original, eroded, and dilated images.
+
+## program
+```py
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+image = np.zeros((500, 500, 3), dtype=np.uint8)
+font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(image, 'HELLO WORLD', (100, 250), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
+plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for displaying
+plt.title("Input Image with Text")
+plt.axis('off')
+
+kernel = np.ones((3, 3), np.uint8)
+eroded_image = cv2.erode(image, kernel, iterations=1)
+plt.imshow(cv2.cvtColor(eroded_image, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB
+plt.title("Eroded Image")
+plt.axis('off')
+dilated_image = cv2.dilate(image, kernel, iterations=1)
+plt.imshow(cv2.cvtColor(dilated_image, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB
+plt.title("Dilated Image")
+plt.axis('off')
+```
+## output
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/a0d430c6-c317-4b90-8d77-91f02e2610f6" />
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/49e406c1-3a7e-4349-9735-b8fcedcc259c" />
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/c25fdc08-3005-410d-8503-ff3c49274580" />
+
+## result
+Thus, the erosion and dilation is successfully implemented by completing the missing code sections. The system detects and highlights lane lines effectively.
