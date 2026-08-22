@@ -62,9 +62,10 @@ plt.title("Dilated Image")
 plt.axis('off')
 ```
 ## output
-<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/a0d430c6-c317-4b90-8d77-91f02e2610f6" />
-<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/49e406c1-3a7e-4349-9735-b8fcedcc259c" />
-<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/c25fdc08-3005-410d-8503-ff3c49274580" />
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/ee037436-5f9d-4fe1-961c-87a342cb204c" />
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/a8b5d4bb-21b7-4c74-9b6f-7c24ed68d802" />
+<img width="389" height="409" alt="download" src="https://github.com/user-attachments/assets/4bb03ecd-770f-4b56-8d0a-8adbb92fd12a" />
+
 
 ## result
 Thus, the erosion and dilation is successfully implemented by completing the missing code sections. The system detects and highlights lane lines effectively.
